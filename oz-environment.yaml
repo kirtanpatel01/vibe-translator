@@ -1,0 +1,13 @@
+name: vibe-translator
+description: "Environment for Vibe Translator — multi-stack app generator powered by Oz"
+
+repositories:
+  - url: https://github.com/hiteshchoudhary/vibe-translator
+    branch: main
+
+startup_commands:
+  - "npm install -g create-vite degit serve"
+  - "apt-get update && apt-get install -y jq curl"
+
+docker:
+  image: node:20-bookworm
